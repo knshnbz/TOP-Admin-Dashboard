@@ -22,6 +22,9 @@
                             <path
                                 d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" />
                         </svg>
+                        <p>
+                            Search cases, samples, reports
+                        </p>
                     </label>
                     <input type="search" name="search" id="search">
                 </div>
@@ -33,34 +36,39 @@
                                 d="M10,21H14A2,2 0 0,1 12,23A2,2 0 0,1 10,21M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M17,11A5,5 0 0,0 12,6A5,5 0 0,0 7,11V18H17V11M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z" />
                         </svg>
                     </div>
-                    <a class="icon" title="GitHub Repo" href="">
+                    <a class="icon" title="GitHub Repo" href="https://github.com/knshnbz/TOP-Admin-Dashboard" target="_blank">
                         <svg class="icon_github" viewBox="0 0 32 32">
                             <path
                                 d="M16.0018,0A16.2088,16.2088,0,0,0,0,16.4223,16.4156,16.4156,0,0,0,10.7179,31.9376c.84.2166.7114-.3966.7114-.8153v-2.846c-4.8513.5839-5.0479-2.7138-5.3732-3.2646-.6578-1.1531-2.213-1.4469-1.7482-1.9977,1.1047-.5839,2.2308.1469,3.5357,2.1262.9438,1.4359,2.7849,1.1935,3.718.9548a4.664,4.664,0,0,1,1.24-2.2327c-5.0264-.9254-7.1214-4.0762-7.1214-7.8219A7.3467,7.3467,0,0,1,7.4074,11.204a6.5675,6.5675,0,0,1,.1752-4.4067C9.66,6.6064,11.819,8.325,11.987,8.4609a15.14,15.14,0,0,1,4.0362-.5,15.1577,15.1577,0,0,1,4.0577.51c.404-.3158,2.406-1.7921,4.3365-1.6121a6.6124,6.6124,0,0,1,.1966,4.3332,7.3488,7.3488,0,0,1,1.7482,4.8584c0,3.7531-2.1093,6.9075-7.15,7.8182a4.7469,4.7469,0,0,1,1.362,3.3418v4.1313c.0286.3305,0,.6573.5363.6573A16.4082,16.4082,0,0,0,32,16.426,16.2136,16.2136,0,0,0,16.0018,0Z">
                             </path>
                         </svg>
                     </a>
-                    <img class="avatar" src="assets/avatars/Avatar_01.webp" alt="">
-                    <div class="name">Kaan Sahinbaz</div>
+                    <div class="name">Dexter Morgan</div>
+                    <img class="avatar" src="assets/avatars/dex-dexter.webp" alt="">
                 </div>
             </div>
             <div class="header-bottom">
                 <div class="profile">
-                    <img class="avatar" src="assets/avatars/Avatar_01.webp" alt="">
+                    <img class="avatar" src="assets/avatars/dex-dexter.webp" alt="">
                     <div>
-                        <p class="light">Hi there,</p>
-                        <p class="bold">Saul Goodman<span>(@bestLawyer)</span></p>
+                        <p class="greeting">Good evening,</p>
+                        <p class="user-name">Dexter Morgan <span>@dexmorgan</span></p>
                     </div>
                 </div>
                 <ul class="menu-bar">
-                    <li>
-                        <button>New</button>
+                    <li class="new-case">
+                        <span class="drop"></span>
+                        <span class="drop"></span>
+                        <span class="drop"></span>
+                        <span class="drop"></span>
+                        <span class="drop"></span>
+                        <button>New Case</button>
                     </li>
                     <li>
-                        <button>Upload</button>
+                        <button>Upload Sample</button>
                     </li>
                     <li>
-                        <button>Share</button>
+                        <button>Export Report</button>
                     </li>
                 </ul>
             </div>
@@ -68,78 +76,69 @@
         <div class="sidebar">
             <div class="sticky">
                 <ul class="dashboard-list">
-                    <li class="dashboard">
+                    <li class="dashboard" aria-label="Dashboard">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>view-dashboard</title>
                             <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" />
                         </svg>
                         <span>Dashboard</span>
                     </li>
-                    <li class="home">
+                    <li class="active-page" aria-label="Home">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>home</title>
                             <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
                         </svg>
                         <span>Home</span>
                     </li>
-                    <li class="profile">
+                    <li aria-label="Profile">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>profile</title>
+                            <path d="M10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6H12L10,4Z" />     
+                        </svg>
+                        <span>Cases</span>
+                    </li>
+                    <li aria-label="Evidence">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
-                                d="M13 3C9.2 3 6.2 5.9 6 9.7L4.1 12.2C3.9 12.5 4.1 13 4.5 13H6V16C6 17.1 6.9 18 8 18H9V21H16V16.3C18.4 15.2 20 12.8 20 10C20 6.1 16.9 3 13 3" />
+                                d="M17.81,4.47C17.73,4.47 17.65,4.45 17.58,4.41C15.66,3.42 14,3 12,3C10.03,3 8.15,3.47 6.44,4.41C6.2,4.54 5.9,4.45 5.76,4.21C5.63,3.97 5.72,3.66 5.96,3.53C7.82,2.5 9.86,2 12,2C14.14,2 16,2.47 18.04,3.5C18.29,3.65 18.38,3.95 18.25,4.19C18.16,4.37 18,4.47 17.81,4.47M3.5,9.72C3.4,9.72 3.3,9.69 3.21,9.63C3,9.47 2.93,9.16 3.09,8.93C4.08,7.53 5.34,6.43 6.84,5.66C10,4.04 14,4.03 17.15,5.65C18.65,6.42 19.91,7.5 20.9,8.9C21.06,9.12 21,9.44 20.78,9.6C20.55,9.76 20.24,9.71 20.08,9.5C19.18,8.22 18.04,7.23 16.69,6.54C13.82,5.07 10.15,5.07 7.29,6.55C5.93,7.25 4.79,8.25 3.89,9.5C3.81,9.65 3.66,9.72 3.5,9.72M9.75,21.79C9.62,21.79 9.5,21.74 9.4,21.64C8.53,20.77 8.06,20.21 7.39,19C6.7,17.77 6.34,16.27 6.34,14.66C6.34,11.69 8.88,9.27 12,9.27C15.12,9.27 17.66,11.69 17.66,14.66A0.5,0.5 0 0,1 17.16,15.16A0.5,0.5 0 0,1 16.66,14.66C16.66,12.24 14.57,10.27 12,10.27C9.43,10.27 7.34,12.24 7.34,14.66C7.34,16.1 7.66,17.43 8.27,18.5C8.91,19.66 9.35,20.15 10.12,20.93C10.31,21.13 10.31,21.44 10.12,21.64C10,21.74 9.88,21.79 9.75,21.79M16.92,19.94C15.73,19.94 14.68,19.64 13.82,19.05C12.33,18.04 11.44,16.4 11.44,14.66A0.5,0.5 0 0,1 11.94,14.16A0.5,0.5 0 0,1 12.44,14.66C12.44,16.07 13.16,17.4 14.38,18.22C15.09,18.7 15.92,18.93 16.92,18.93C17.16,18.93 17.56,18.9 17.96,18.83C18.23,18.78 18.5,18.96 18.54,19.24C18.59,19.5 18.41,19.77 18.13,19.82C17.56,19.93 17.06,19.94 16.92,19.94M14.91,22C14.87,22 14.82,22 14.78,22C13.19,21.54 12.15,20.95 11.06,19.88C9.66,18.5 8.89,16.64 8.89,14.66C8.89,13.04 10.27,11.72 11.97,11.72C13.67,11.72 15.05,13.04 15.05,14.66C15.05,15.73 16,16.6 17.13,16.6C18.28,16.6 19.21,15.73 19.21,14.66C19.21,10.89 15.96,7.83 11.96,7.83C9.12,7.83 6.5,9.41 5.35,11.86C4.96,12.67 4.76,13.62 4.76,14.66C4.76,15.44 4.83,16.67 5.43,18.27C5.53,18.53 5.4,18.82 5.14,18.91C4.88,19 4.59,18.87 4.5,18.62C4,17.31 3.77,16 3.77,14.66C3.77,13.46 4,12.37 4.45,11.42C5.78,8.63 8.73,6.82 11.96,6.82C16.5,6.82 20.21,10.33 20.21,14.65C20.21,16.27 18.83,17.59 17.13,17.59C15.43,17.59 14.05,16.27 14.05,14.65C14.05,13.58 13.12,12.71 11.97,12.71C10.82,12.71 9.89,13.58 9.89,14.65C9.89,16.36 10.55,17.96 11.76,19.16C12.71,20.1 13.62,20.62 15.03,21C15.3,21.08 15.45,21.36 15.38,21.62C15.33,21.85 15.12,22 14.91,22Z" />
                         </svg>
-                        <span>Profile</span>
+                        <span>Evidence</span>
                     </li>
-                    <li class="messages">
+                    <li aria-label="Lab Queue">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>message</title>
-                            <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" />
+                            <path
+                                d="M11.15,15.18L9.73,13.77L11.15,12.35L12.56,13.77L13.97,12.35L12.56,10.94L13.97,9.53L15.39,10.94L16.8,9.53L13.97,6.7L6.9,13.77L9.73,16.6L11.15,15.18M3.08,19L6.2,15.89L4.08,13.77L13.97,3.87L16.1,6L17.5,4.58L16.1,3.16L17.5,1.75L21.75,6L20.34,7.4L18.92,6L17.5,7.4L19.63,9.53L9.73,19.42L7.61,17.3L3.08,21.84V19Z" />
                         </svg>
-                        <span>Messages</span>
+                        <span>Lab Queue</span>
                     </li>
-                    <li class="history">
+                    <li aria-label="Archive">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>clock-time-eight</title>
                             <path
                                 d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M7.7 15.5L7 14.2L11 11.9V7H12.5V12.8L7.7 15.5Z" />
                         </svg>
-                        <span>History</span>
+                        <span>Archive</span>
                     </li>
-                    <li class="tasks">
+                    <li aria-label="Reports">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>Tasks</title>
                             <path
                                 d="M16,9H21.5L16,3.5V9M7,2H17L23,8V18A2,2 0 0,1 21,20H7C5.89,20 5,19.1 5,18V4A2,2 0 0,1 7,2M3,6V22H21V24H3A2,2 0 0,1 1,22V6H3Z" />
                         </svg>
-                        <span>Tasks</span>
+                        <span>Reports</span>
                     </li>
-                    <li class="communities">
+                    
+                    <li class="second-row" aria-label="Settings">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>account-group</title>
-                            <path
-                                d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z" />
-                        </svg>
-                        <span>Communities</span>
-                    </li>
-                    <li class="settings second-row">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>cog</title>
                             <path
                                 d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
                         </svg>
                         <span>Settings</span>
                     </li>
-                    <li class="support">
+                    <li aria-label="Support">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>help-box</title>
                             <path
                                 d="M11,18H13V16H11V18M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3Z" />
                         </svg>
                         <span>Support</span>
                     </li>
-                    <li class="privacy">
+                    <li aria-label="Privacy">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <title>security</title>
                             <path
                                 d="M12,12H19C18.47,16.11 15.72,19.78 12,20.92V12H5V6.3L12,3.19M12,1L3,5V11C3,16.55 6.84,21.73 12,23C17.16,21.73 21,16.55 21,11V5L12,1Z" />
                         </svg>
@@ -152,16 +151,17 @@
             <div class="projects">
                 <h1 class="content-title">Projects</h1>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_01.webp" alt="Tamiami Slough Recovery" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">01</p>
+                        <h2 class="project-title">Tamiami Slough Recovery</h2>
+                        <p class="project-description">Partial recovery from the slough, submerged 72+ hours. Spatter reconstruction limited; relying on bone-surface
+                        patterning instead.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">Luminol</p>
+                        <p class="tag">Photogrammetry</p>
+                        <p class="status active">Active</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -170,16 +170,14 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
@@ -187,16 +185,17 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_02.webp" alt="Marina Dock 7 — Blood Trail" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">02</p>
+                        <h2 class="project-title">Marina Dock 7 — Blood Trail</h2>
+                        <p class="project-description">Directional trail from the cleaning station to slip 14. Twelve impact points, all consistent with a single source moving
+                        east.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">Spatter Trig</p>
+                        <p class="tag">Field Kit</p>
+                        <p class="status active">Active</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -205,16 +204,14 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
@@ -222,16 +219,17 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_03.webp" alt="Bay Harbor Recovery" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">03</p>
+                        <h2 class="project-title">Bay Harbor Recovery</h2>
+                        <p class="project-description">Cross-referencing recovered samples against the open-case DNA index. Nineteen distinct profiles so far, none matching
+                        each other.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">DNA Swab</p>
+                        <p class="tag">Index Match</p>
+                        <p class="status flagged">Flagged</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -240,16 +238,14 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
@@ -257,16 +253,17 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_04.webp" alt="Flagler St. Shooting" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">04</p>
+                        <h2 class="project-title">Flagler St. Shooting</h2>
+                        <p class="project-description">Three shooters claimed, two blood sources found. Back-spatter on the driver’s door puts the second shot inside the
+                        vehicle, not outside it.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">Spatter Trig</p>
+                        <p class="tag">Microscopy</p>
+                        <p class="status queued">Queued</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -275,16 +272,14 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
@@ -292,16 +287,15 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_05.webp" alt="Reagent Inventory Audit" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">05</p>
+                        <h2 class="project-title">Reagent Inventory Audit</h2>
+                        <p class="project-description">Quarterly audit of phenolphthalein and luminol stock. Masuka’s log and the actual shelf count disagree by four units.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">Lab Admin</p>
+                        <p class="status queued">Queued</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -310,16 +304,14 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
@@ -327,16 +319,16 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-img"></div>
+                    <img class="project-img" src="assets/scenes/Scene_06.webp" alt="Cold Case 1973 — Doral" >
                     <div class="project-label">
-                        <h2 class="queue">01</h2>
-                        <p class="project-title">Project Title</p>
-                        <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, neque.</p>
+                        <p class="queue">06</p>
+                        <h2 class="project-title">Cold Case 1973 — Doral</h2>
+                        <p class="project-description">Reopened at LaGuerta’s request. Original slides survived; the photographs did not. Rebuilding the scene from
+                        measurements alone.</p>
                     </div>
                     <div class="project-tags">
-                        <p class="tags treeds">3ds Max</p>
-                        <p class="tags sketch-up">SketchUp</p>
-                        <p class="status active">↑ Active</p>
+                        <p class="tag">Lab Admin</p>
+                        <p class="status">Closed</p>
                     </div>
                     <div class="card-controls">
                         <button class="star" aria-label="Add to favourites">
@@ -345,22 +337,21 @@
                                     d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
                             </svg>
                         </button>
-                        <button class="eye">
+                        <button class="eye" aria-label="Add to watch-list">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>eye-plus-outline</title>
                                 <path
                                     d="M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C12.36,19.5 12.72,19.5 13.08,19.45C13.03,19.13 13,18.82 13,18.5C13,18.14 13.04,17.78 13.1,17.42C12.74,17.46 12.37,17.5 12,17.5C8.24,17.5 4.83,15.36 3.18,12C4.83,8.64 8.24,6.5 12,6.5C15.76,6.5 19.17,8.64 20.82,12C20.7,12.24 20.56,12.45 20.43,12.68C21.09,12.84 21.72,13.11 22.29,13.5C22.56,13 22.8,12.5 23,12C21.27,7.61 17,4.5 12,4.5M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M18,14.5V17.5H15V19.5H18V22.5H20V19.5H23V17.5H20V14.5H18Z" />
                             </svg>
                         </button>
-                        <button class="share">
+                        <button class="share" aria-label="Share content">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                                <title>share-outline</title>
                                 <path
                                     d="M14,5V9C7,10 4,15 3,20C5.5,16.5 9,14.9 14,14.9V19L21,12L14,5M16,9.83L18.17,12L16,14.17V12.9H14C11.93,12.9 10.07,13.28 8.34,13.85C9.74,12.46 11.54,11.37 14.28,11L16,10.73V9.83Z" />
                             </svg>
                         </button>
                     </div>
                 </div>
+
                 
             </div>
             <div class="right-bar">
@@ -368,20 +359,24 @@
                     <h1 class="content-title">Announcements</h1>
                     <div class="info-card announcements-card">
                         <div class="announcements-row">
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, eos!</p>
+                            <h4>Evidence room access logs</h4>
+                            <p>All keycard entries after 22:00 now require a written justification. Retroactive to the first of the month.</p>
                         </div>
                         <div class="announcements-row">
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, eos!</p>
+                            <h4>Mandatory sensitivity training</h4>
+                            <p>Thursday, 09:00, briefing room. Attendance is not optional this time. — Lt. LaGuerta</p>
                         </div>
                         <div class="announcements-row">
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, eos!</p>
+                            <h4>Reagent order delayed</h4>
+                            <p>The luminol shipment slipped to next week. Ration field kits accordingly.</p>
                         </div>
                         <div class="announcements-row">
-                            <h4>Lorem, ipsum dolor.</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam, eos!</p>
+                            <h4>Overtime cap lifted</h4>
+                            <p>Through the end of the quarter only. Log it properly or it does not get paid.</p>
+                        </div>
+                        <div class="announcements-row">
+                            <h4>Batista’s thing</h4>
+                            <p>Angel’s promotion drinks, Friday, Papa’s. He says he is not paying. He will be paying.</p>
                         </div>
                     </div>
                 </div>
@@ -389,31 +384,51 @@
                     <h1 class="content-title">Trending</h1>
                     <div class="info-card trend-card">
                         <div class="trending-row">
-                            <img class="trending-avatar" src="assets/avatars/Avatar_03.webp" alt="">
+                            <img class="trending-avatar" src="assets/avatars/dex-debra.webp" alt="">
                             <div class="trending-details">
-                                <p class="trending-handle">@kaansahinbz</p>
-                                <p class="trending-desc">Nice Bro !</p>
+                                <p class="trending-handle">@debmorgan</p>
+                                <p class="trending-desc">Blood guy, where the hell are you? I need Flagler before
+                                Matthews gets to me first.</p>
                             </div>
                         </div>
                         <div class="trending-row">
-                            <img class="trending-avatar" src="assets/avatars/Avatar_02.webp" alt="">
+                            <img class="trending-avatar" src="assets/avatars/dex-masuka.webp" alt="">
                             <div class="trending-details">
-                                <p class="trending-handle">@kaansahinbz</p>
-                                <p class="trending-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus esse quae maxime nesciunt corrupti nisi laudantium neque possimus eum accusantium.</p>
+                                <p class="trending-handle">@vmasuka</p>
+                                <p class="trending-desc">Ran the trig three times. The angles never lie. People do.
+                                Mostly people.</p>
                             </div>
                         </div>
                         <div class="trending-row">
-                            <img class="trending-avatar" src="assets/avatars/Avatar_04.webp" alt="">
+                            <img class="trending-avatar" src="assets/avatars/dex-batista.webp" alt="">
                             <div class="trending-details">
-                                <p class="trending-handle">@kaansahinbz</p>
-                                <p class="trending-desc">Nice Bro !</p>
+                                <p class="trending-handle">@abatista</p>
+                                <p class="trending-desc">Solid work on the dock scene, brother. Drinks Friday, and
+                                you are not getting out of it this time.</p>
                             </div>
                         </div>
                         <div class="trending-row">
-                            <img class="trending-avatar" src="assets/avatars/Avatar_05.webp" alt="">
+                            <img class="trending-avatar" src="assets/avatars/dex-laguerta.webp" alt="">
                             <div class="trending-details">
-                                <p class="trending-handle">@kaansahinbz</p>
-                                <p class="trending-desc">Nice Bro !</p>
+                                <p class="trending-handle">@mlaguerta</p>
+                                <p class="trending-desc">Reminder: forensic summaries route through my office before
+                                they reach anyone with a press badge.</p>
+                            </div>
+                        </div>
+                        <div class="trending-row">
+                            <img class="trending-avatar" src="assets/avatars/dex-quinn.webp" alt="">
+                            <div class="trending-details">
+                                <p class="trending-handle">@jquinn</p>
+                                <p class="trending-desc">Anyone else's keycard not reading on the evidence room door?
+                                Asking for a friend.</p>
+                            </div>
+                        </div>
+                        <div class="trending-row">
+                            <img class="trending-avatar" src="assets/avatars/dex-doakes.webp" alt="">
+                            <div class="trending-details">
+                                <p class="trending-handle">@jdoakes</p>
+                                <p class="trending-desc">Funny thing about the blood guy. First one at every scene,
+                                last one to leave.</p>
                             </div>
                         </div>
                     </div>
